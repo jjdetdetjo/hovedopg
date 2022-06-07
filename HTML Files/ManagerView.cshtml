@@ -1,0 +1,11 @@
+﻿<th class="clickable" ng-click="sortBy('RemainingTicketHours')">
+
+    Remaining Ticket Hours
+
+    <span ng-show="sortPropertyName === 'RemainingTicketHours'" class="glyphicon" ng-class="{'glyphicon-chevron-down' : !sortReverse, 'glyphicon-chevron-up' : sortReverse}" aria-hidden="true"></span>
+
+</th>
+
+
+
+<td><span>{{getRemainingTicketHours(m_entry.DisplayName)}}</span> </td>

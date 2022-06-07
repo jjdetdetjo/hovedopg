@@ -1,0 +1,51 @@
+﻿<div class="form-control" tabindex="16" ng-if="IsHappyFoxSelected()" style=" display: flex;justify-content: space-between;padding-top: 0;padding-bottom: 0;">
+
+    <div style="display: flex;flex-direction: column;">
+
+        <label style="color: gray;
+
+                                          font-weight: normal;
+
+                                          margin: 0;
+
+                                          font-size: 70%">Estimated Hours</label>
+
+        <label style="font-weight: 400;
+
+                                          color: black;"> {{entryDraft.ticket.Estimate}} </label>
+
+    </div>
+
+    <div style="display: flex;flex-direction: column;">
+
+        <label style="color: gray;
+
+                                          font-weight: normal;
+
+                                          margin: 0;
+
+                                          font-size: 70%">Hours Registered</label>
+
+        <label style="font-weight: 400;
+
+                                          color: black;"> {{entryDraft.ticket.TimeSpent}} </label>
+
+    </div>
+
+    <div style="display: flex;flex-direction: column;" ng-style={color:BCForecastColor()}>
+
+        <label style="color: gray;
+
+                                          font-weight: normal;
+
+                                          margin: 0;
+
+                                          font-size: 70%"> Forecast </label>
+
+        <label style="font-weight: 400;
+
+                                           ;"> {{BCForecast()}} </label>
+
+    </div>
+
+</div>
